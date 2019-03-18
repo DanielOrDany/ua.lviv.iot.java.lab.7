@@ -2,31 +2,36 @@
 
 public class InputText {
 	public String inputText;
+<span class="fc" id="L5">	public int loundes = 0;</span>
 
 	public String getInputText() {
-<span class="fc" id="L7">		return inputText;</span>
+<span class="fc" id="L8">		return inputText;</span>
 	}
 
 	public void setInputText(String inputText) {
-<span class="fc" id="L11">		this.inputText = inputText;</span>
-<span class="fc" id="L12">	}</span>
+<span class="fc" id="L12">		this.inputText = inputText;</span>
+<span class="fc" id="L13">	}</span>
 
-<span class="fc" id="L14">	public InputText(String inputText) {</span>
-<span class="fc" id="L15">		this.inputText = inputText;</span>
-<span class="fc" id="L16">	}</span>
+<span class="fc" id="L15">	public InputText(String inputText) {</span>
+<span class="fc" id="L16">		this.inputText = inputText;</span>
+<span class="fc" id="L17">	}</span>
 	
 	public int countLoudLetters () {
-<span class="fc" id="L19">		int loundes = 0;</span>
-<span class="fc bfc" id="L20" title="All 2 branches covered.">		for(char c : inputText.toCharArray()){</span>
-<span class="pc bpc" id="L21" title="2 of 10 branches missed.">		   if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'){</span>
-<span class="fc" id="L22">			   loundes++;</span>
+<span class="fc" id="L20">		loundes = 0;</span>
+<span class="fc bfc" id="L21" title="All 2 branches covered.">		for(char c : inputText.toCharArray()){</span>
+<span class="pc bpc" id="L22" title="2 of 10 branches missed.">		   if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'){</span>
+<span class="fc" id="L23">			   loundes++;</span>
 		   }
-<span class="pc bpc" id="L24" title="5 of 10 branches missed.">		   if(c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U'){</span>
-<span class="nc" id="L25">			   loundes++;</span>
+<span class="pc bpc" id="L25" title="5 of 10 branches missed.">		   if(c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U'){</span>
+<span class="nc" id="L26">			   loundes++;</span>
 		   }
 		}
-<span class="fc" id="L28">		return loundes; </span>
+<span class="fc" id="L29">		return loundes; </span>
 	}
+	
+	public void showResults() {
+<span class="nc" id="L33">		System.out.println(&quot;Number of loundes: &quot;+loundes);</span>
+<span class="nc" id="L34">	}</span>
 	
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
